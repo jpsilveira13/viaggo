@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Viaggo",
+    "slug": "viaggo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "viaggo",
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/4c6f2ff1-95d1-4f2f-93d3-8e0f170c9d86",
+      "fallbackToCacheTimeout": 0
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3358FF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.viaggo.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Viaggo precisa de acesso à câmera para foto de perfil.",
+        "NSPhotoLibraryUsageDescription": "Viaggo precisa de acesso às fotos para foto de perfil."
+      }
+    },
+    "android": {
+      "package": "com.viaggo.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#3358FF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-asset",
+      [
+        "expo-dev-client",
+        {
+          "addGeneratedScheme": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4c6f2ff1-95d1-4f2f-93d3-8e0f170c9d86"
+      }
+    },
+    "owner": "joao.silveira13"
+  }
+}
